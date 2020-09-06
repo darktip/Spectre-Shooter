@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 49561213416815805}
   - component: {fileID: 1995358350463147366}
   - component: {fileID: 357163231949037322}
-  - component: {fileID: 1995358350463147369}
+  - component: {fileID: 163738437686441568}
   - component: {fileID: 1995358350463147367}
   - component: {fileID: 1995358350463147364}
   - component: {fileID: 342137902066706840}
   - component: {fileID: 1995358350463147365}
+  - component: {fileID: 3244858665624911842}
   m_Layer: 10
   m_Name: Spectre (White)
   m_TagString: Untagged
@@ -37,6 +38,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3045281896105874067}
+  - {fileID: 5753549203963121977}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageRate: 10
---- !u!114 &1995358350463147369
+--- !u!114 &163738437686441568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995358350463147368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86f8b1b6b2e27c440976ab258177e404, type: 3}
+  m_Script: {fileID: 11500000, guid: 650179a59e5ecf242a891527f0c3b683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
@@ -178,6 +180,66 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.6534653
   m_Center: {x: 0.00000008940699, y: 2.3692183, z: -0.0071736593}
+--- !u!54 &3244858665624911842
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995358350463147368}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!1 &2554786103772605961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5753549203963121977}
+  - component: {fileID: 8910894166733000453}
+  m_Layer: 12
+  m_Name: AvoidenceCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5753549203963121977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554786103772605961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1223641497992644562}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &8910894166733000453
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554786103772605961}
+  m_Material: {fileID: 13400000, guid: 9195e3ded0a0cd2488d8c9bf08954ccf, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.3095148
+  m_Center: {x: 0, y: 0, z: 0.35}
 --- !u!1001 &8837752673169525152
 PrefabInstance:
   m_ObjectHideFlags: 0

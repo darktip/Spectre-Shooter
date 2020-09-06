@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2fad06cf2f8be8844b172dabbbba2d62, type: 2}
+    - target: {fileID: 163738437686441568, guid: be440fa3d5af56841b6af6e9857f9a6a,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 357163231949037322, guid: be440fa3d5af56841b6af6e9857f9a6a,
         type: 3}
       propertyPath: damageRate
@@ -91,6 +96,11 @@ PrefabInstance:
         type: 3}
       propertyPath: moveSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615477643321812674, guid: be440fa3d5af56841b6af6e9857f9a6a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be440fa3d5af56841b6af6e9857f9a6a, type: 3}
